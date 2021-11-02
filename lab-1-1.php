@@ -9,3 +9,5 @@
   $var4=123;  
   var_dump ($var4);   
 ?>
+<body style='background-color:pink'>
+
