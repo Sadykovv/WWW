@@ -1,9 +1,10 @@
-<p> Дата и время: 
+<p><font face="Times"> Дата и время:</font> 
 <p>  
 <?php 
     $d=date("d.m.Y  H:i"); 
     echo($d);
 ?>
+<body style='background-color:pink'>
 <ul>
         <li><a href="lab-1-1.php">Упражнение 1-2</a></li>
 	<li><a href="lab-1-2.php">Упражнение 1-3</a></li> 
