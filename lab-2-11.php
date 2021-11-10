@@ -3,15 +3,15 @@ $digit=rand(1,500);
 $n=0;
 $m=0;
 $k=0;
-for (;pow($n,2.0)<=$digit;++$n)
+for (;pow($n,2)<=$digit;++$n)
 {
 }
 $n--;
-for (;pow($m,2.0)<=$digit-pow($n,2.0);++$m)
+for (;pow($m,2)<=$digit-pow($n,2);++$m)
 {
 }
 $m--;
-for (;pow($k,2.0)<=$digit-pow($n,2.0)-pow($m,2.0);++$k)
+for (;pow($k,2)<=$digit-pow($n,2)-pow($m,2);++$k)
 {
 }
 $k--;
