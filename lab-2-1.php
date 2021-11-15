@@ -16,8 +16,12 @@ for ($i=1;$i<=10;$i++){
 }
 echo "<br>";
 echo '3)';
-$rez=array_merge($treug+$kvd);
+$rez=array_merge($treug,$kvd);
 print_r($rez);
+echo "<br>";
+echo '4)';
+sort($rez);
+print join(" ",$rez);
 echo "<br>";
 $a=-1;   $b = "";  
 if ($a)  {  echo '$a='."$a - истина<br>";  } 
