@@ -23,6 +23,10 @@ echo '4)';
 sort($rez);
 print join(" ",$rez);
 echo "<br>";
+echo '5)';
+unset ($rez[0]);
+print join(" ",$rez);
+echo "<br>";
 $a=-1;   $b = "";  
 if ($a)  {  echo '$a='."$a - истина<br>";  } 
   else {  echo '$a='."$a - ложь<br>";  }  
