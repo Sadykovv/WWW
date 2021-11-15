@@ -15,6 +15,10 @@ for ($i=1;$i<=10;$i++){
 	echo $kvd[$i]." ";
 }
 echo "<br>";
+echo '3)';
+$rez=array_merge($treug+$kvd);
+print_r($rez);
+echo "<br>";
 $a=-1;   $b = "";  
 if ($a)  {  echo '$a='."$a - истина<br>";  } 
   else {  echo '$a='."$a - ложь<br>";  }  
