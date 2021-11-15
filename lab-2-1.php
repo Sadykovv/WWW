@@ -17,7 +17,7 @@ for ($i=1;$i<=10;$i++){
 echo "<br>";
 echo '3)';
 $rez=array_merge($treug,$kvd);
-print_r($rez);
+print join(" ",$rez);
 echo "<br>";
 echo '4)';
 sort($rez);
@@ -26,6 +26,10 @@ echo "<br>";
 echo '5)';
 unset ($rez[0]);
 print join(" ",$rez);
+echo "<br>";
+echo '6)';
+$rez1=array_unique($rez);
+print join(" ",$rez1);
 echo "<br>";
 $a=-1;   $b = "";  
 if ($a)  {  echo '$a='."$a - истина<br>";  } 
