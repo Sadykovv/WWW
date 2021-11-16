@@ -21,5 +21,7 @@
         <li><a href="lab-2-9.php">Упражнение 1-14</a></li>
         <li><a href="lab-2-10.php">Упражнение 1-15</a></li>
         <li><a href="lab-2-11.php">Упражнение 1-16</a></li>  
-        <li><a href="lab-2-12.php">Задача 2.4</a></li>      	
+        <li><a href="lab-2-12.php">Задача 2.4</a></li>     
+        <li><a href="lab-2-13.php">Задача 2.5</a></li>   
+        <li><a href="lab-2-14.php">Задача 2.6</a></li>  	
 </ul>
