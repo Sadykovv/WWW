@@ -1,4 +1,4 @@
-<? 
+<?php
 if ($_POST["d"]=="plus")  { 
   $c=$_POST["a"]+$_POST["b"]; 
   if ($_POST["f"].checked==checked) { 
@@ -9,6 +9,6 @@ if ($_POST["d"]=="plus")  {
      if (isset($_POST["f"]))  { 
           echo ("Результат = ".$c);        
       } else { 
-         echo ($_POST['a']."*".$_POST['b']." = ".$c);  } 
- echo ("<BR> <A href='f4.html'> Вернуться назад </A>"); 
+         echo ($_POST['a']."*".$_POST['b']." = ".$c);  }
+ echo ("<BR> <A href='f4.html'> Вернуться назад </A>"); }
 ?> 

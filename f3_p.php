@@ -1,4 +1,4 @@
-<? 
+<?php
  if ($_POST["d"]=="plus")  { 
    $c=$_POST["a"]+$_POST["b"]; 
    echo ("сумма чисел = $c"); 
