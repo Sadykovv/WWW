@@ -34,4 +34,5 @@
         <li><a href="s3-1.html">Задача 3.1</a></li>
         <li><a href="s3-2.php">Задача 3.2</a></li>
         <li><a href="s3-3.php">Задача 3.3</a></li>
+        <li><a href="s3-4.php">Задача 3.4</a></li>
 </ul>
