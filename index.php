@@ -30,4 +30,8 @@
         <li><a href="f4.html">Упражнение 3-4</a></li>
         <li><a href="f5.html">Упражнение 3-5</a></li>
         <li><a href="f6.html">Упражнение 3-6</a></li>
+        <li><a href="f7.php">Упражнение 3-7</a></li>
+        <li><a href="s3-1.html">Задача 3.1</a></li>
+        <li><a href="s3-2.php">Задача 3.2</a></li>
+        <li><a href="s3-3.php">Задача 3.3</a></li>
 </ul>

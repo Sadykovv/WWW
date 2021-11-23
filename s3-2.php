@@ -1,5 +1,5 @@
 <HTML> 
-<HEAD> <TITLE> Угадай число </TITLE> </HEAD>  
+<HEAD> <TITLE></TITLE> </HEAD>  
 <BODY> 
 <FORM  method="post" action="<?php print $PHP_SELF ?>"> 
   Калькулятор  
