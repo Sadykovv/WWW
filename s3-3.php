@@ -44,11 +44,10 @@ if (isset($_POST["obr"]))
 				break;
 			}
 			}
-				
+			if( $prime)
+				echo $i;	
 				
 		}
-		if( $prime=true)
-				echo $i;
 		
 break;
 	case 4:
