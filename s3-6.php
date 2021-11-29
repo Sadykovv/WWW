@@ -13,6 +13,7 @@ for ($i=0;$i<$length;$i++)
 	}
 $nechet_reverse= strrev($nechet);
 $b=$chet. $nechet_reverse;
+$b=mb_convert_encoding($b,"windows-1251");
 echo $b;
 ?>
 
