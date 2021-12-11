@@ -37,5 +37,5 @@
         <li><a href="s3-4.php">Задача 3.4</a></li>
         <li><a href="s3-5.php">Задача 3.5</a></li>
         <li><a href="s3-6.html">Задача 3.6</a></li>
-        <li><a href="">ffff</a></li>
+        <li><a href="bd_user">bd_user</a></li>
 </ul>
