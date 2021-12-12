@@ -4,7 +4,7 @@
 <head><meta charset="UTF-8"/></head>
 <body>
 <H2>Регистрация на сайте:</H2>
-<form action="save_new2.php" method="get">
+<form action="save_new.php" method="get">
 Название: <input name="name" size="50" type="text">
 <br>ИНН: <input name="inn" size="20" type="text">
 <br>Страна: <input name="country" size="20" type="text">
@@ -15,6 +15,6 @@
 <input name="b2" type="reset" value="Очистить"></p>
 </form>
 <p>
-<a href="index2.php"> Вернуться к списку пользователей </a>
+<a href="index.php"> Вернуться к списку пользователей </a>
 </body>
 </html>

@@ -22,7 +22,7 @@ $country = $st['bank_country'];
 $reliability_class = $st['bank_reliability_class'];
 $info = $st['bank_volume_of_assets'];
 }
-print "<form action='save_edit2.php' metod='get'>";
+print "<form action='save_edit.php' metod='get'>";
 print "Название: <input name='name' size='50' type='text'
 value='".$name."'>";
 print "<br>ИНН: <input name='inn' size='20' type='text'
@@ -36,7 +36,7 @@ cols='40'>".$info."</textarea>";
 print "<input type='hidden' name='id' value='".$id."'> <br>";
 print "<input type='submit' name='' value='Сохранить'>";
 print "</form>";
-print "<p><a href=\"index2.php\"> Вернуться к списку
+print "<p><a href=\"index.php\"> Вернуться к списку
 пользователей </a>";
 ?>
 </body>

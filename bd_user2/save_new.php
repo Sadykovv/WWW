@@ -14,8 +14,8 @@ $sql_add = "INSERT INTO bank SET bank_name='" . $_GET['name']
 $result=mysqli_query($db,$sql_add);
 if (mysqli_affected_rows($db)>0) // если нет ошибок при выполнении запроса
 { print "<p>Спасибо, вы зарегистрированы в базе данных.";
-print "<p><a href=\"index2.php\"> Вернуться к списку
+print "<p><a href=\"index.php\"> Вернуться к списку
 пользователей </a>"; }
-else { print "Ошибка сохранения. <a href=\"index2.php\">
+else { print "Ошибка сохранения. <a href=\"index.php\">
 Вернуться к списку книг </a>"; }
 ?>

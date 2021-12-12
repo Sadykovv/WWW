@@ -12,9 +12,9 @@ $zapros="UPDATE bank SET bank_name='".$_GET['name'].
 .$_GET['id'];
 mysqli_query($db,$zapros);
 if (mysqli_affected_rows($db)>0) {
-echo 'Все сохранено. <a href="index2.php"> Вернуться к списку
+echo 'Все сохранено. <a href="index.php"> Вернуться к списку
 пользователей </a>'; }
-else { echo 'Ошибка сохранения. <a href="index2.php">
+else { echo 'Ошибка сохранения. <a href="index.php">
 Вернуться к списку пользователей</a> '; }
 ?>
 </body> </html>
