@@ -1,0 +1,12 @@
+<?php
+$db=mysqli_connect("localhost", "f0595201_f0595201","1293749568","f0595201_Alisher") or die ("Невозможно
+подключиться к серверу");
+$lang=mysqli_query($db,"set names 'utf8'");
+$query="SELECT * from deposits";
+$result=mysqli_query($db,$query); 
+$zapros="DELETE FROM deposits WHERE id_pod=" . $_GET['id'];
+mysqli_query($db,$zapros);
+header("Location: index.php");
+exit;
+?>
+

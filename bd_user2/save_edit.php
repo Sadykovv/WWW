@@ -1,10 +1,9 @@
 <html> <body>
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$db=mysqli_connect("localhost", "root","","banks") or die ("Невозможно
+$db=mysqli_connect("localhost", "f0595201_f0595201","1293749568","f0595201_Alisher") or die ("Невозможно
 подключиться к серверу");
 $lang=mysqli_query($db,"set names 'utf8'");
-$query="SELECT * from bank";
 $zapros="UPDATE bank SET bank_name='".$_GET['name'].
 "', bank_inn='".$_GET['inn']."', bank_country='"
 .$_GET['country']."', bank_reliability_class='".$_GET['reliability_class'].

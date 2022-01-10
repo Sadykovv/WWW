@@ -8,6 +8,7 @@
 Название: <input name="name" size="50" type="text">
 <br>ИНН: <input name="inn" size="20" type="text">
 <br>Страна: <input name="country" size="20" type="text">
+<br>id_банка: <input name="id_bank" size="20" type="text">
 <br>Класс надежности: <input name="reliability_class" size="30" type="text">
 <br>объем активов: <textarea name="volume_of_assets" rows="4" cols="40">
 </textarea>
@@ -15,6 +16,7 @@
 <input name="b2" type="reset" value="Очистить"></p>
 </form>
 <p>
-<a href="index.php"> Вернуться к списку пользователей </a>
+<a href="index.php"> Вернуться к списку  </a>
 </body>
 </html>
+

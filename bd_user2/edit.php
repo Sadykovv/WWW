@@ -5,15 +5,13 @@
 <body>
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$db=mysqli_connect("localhost", "root","","banks") or die ("Невозможно
+$db=mysqli_connect("localhost", "f0595201_f0595201","1293749568","f0595201_Alisher") or die ("Невозможно
 подключиться к серверу");
 $lang=mysqli_query($db,"set names 'utf8'");
-$query="SELECT * from bank";
-$result=mysqli_query($db,$query); 
-$pages=mysqli_fetch_assoc($result);
-$rows="SELECT bank_name, bank_country,
+$query="SELECT bank_name, bank_country,
 bank_inn, bank_reliability_class, bank_volume_of_assets FROM bank WHERE
-id_user=".$_GET['id'];
+id_bank=".$_GET['id'];
+$result=mysqli_query($db,$query); 
 while ($st = mysqli_fetch_assoc($result)) {
 $id=$_GET['id'];
 $name = $st['bank_name'];
@@ -22,7 +20,7 @@ $country = $st['bank_country'];
 $reliability_class = $st['bank_reliability_class'];
 $info = $st['bank_volume_of_assets'];
 }
-print "<form action='save_edit.php' metod='get'>";
+print "<form action='save_edit.php' method='get'>";
 print "Название: <input name='name' size='50' type='text'
 value='".$name."'>";
 print "<br>ИНН: <input name='inn' size='20' type='text'
