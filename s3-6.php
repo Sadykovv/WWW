@@ -1,4 +1,4 @@
-<?php
+<?php header ('Content-type:text/html;charset=windows-1251');
 $nechet =" ";
 $chet =" ";
 $a=($_POST["a"]);
@@ -13,32 +13,29 @@ for ($i=0;$i<$length;$i++)
 	}
 $nechet_reverse= strrev($nechet);
 $b=$chet. $nechet_reverse;
-$b=mb_convert_encoding($b,"UTF-8");
 echo $b;
 ?>
 
 <?php
-$string=($_POST["TEXT"]);
-$upper=$lower=0;
-foreach(str_split($string) as $c){
-    if(ctype_upper($c)){
-        ++$upper;
-    }elseif(ctype_lower($c)){
-        ++$lower;
+ $mass = str_split($_POST["TEXT"]);
+    $lol = iconv_strlen($_POST["TEXT"], 'UTF-8');
+    $CountUpp = 0;
+    $CountDown = 0;
+    for ($i = 0; $i < $lol; $i++) {
+        $mass[$i] = iconv("windows-1251","UTF-8", $mass[$i]);
+        if ($mass[$i] === strtoupper($mass[$i])) {
+            $CountUpp++;
+        } else {
+            $CountDown++;
+        }
     }
-}
-
-if ($upper>$lower){
-	$string= mb_convert_case($string, MB_CASE_UPPER, "UTF-8");
-	echo $string;
-	}
-elseif ($upper<$lower) 
-{
-$string= mb_convert_case($string, MB_CASE_LOWER, "UTF-8");
-echo $string;
-}
-elseif ($upper=$lower)
-echo $string;
+    if ($CountUpp > $CountDown) {
+        echo strtoupper($_POST["TEXT"]);
+    } elseif ($CountUpp < $CountDown) {
+        echo strtolower($_POST["TEXT"]);
+    } else {
+        echo $_POST["TEXT"];
+    }
 ?>
 
 <?php
@@ -60,7 +57,7 @@ for ($i=0;$i!=$length;$i++)
 }
 echo $string;
 
-echo ("<BR> <A href='s3-6.html'> Р’РµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ </A>"); 
+echo ("<BR> <A href='s3-6.html'> Вернуться назад </A>"); 
 ?>
 
 
